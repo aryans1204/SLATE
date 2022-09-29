@@ -1,0 +1,3 @@
+The directory is structured with performance_modelling, configuration, and execution as separate modules.
+
+Client, Instance and Function level API's are defined in the configuration, along with methods to configure the minimum instance groups for client manifest. Execution contains the gateway throguh which clients make requests, and the scheduler that schedules instances to run based on the configured environment and candidate list. The performance_modelling dir contaisn the offline performance models for function typesover varying input domains and resource configs as described in the paper. The performance models configured offline are used at runtime configure the environment based on client manifest. 
