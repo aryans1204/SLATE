@@ -9,9 +9,8 @@
 
 //defining client request
 typedef struct Request{
-    char* func_type;
-    int **input1, **input2;
-    int size1, size2;
+    FunctionDef* f;
+    int size;
 } Request;
 
 class Gateway {
